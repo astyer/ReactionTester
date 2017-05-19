@@ -7,7 +7,7 @@ public class Timerstuff {
 
     int secondsPassed = 0;
     Timer timer = new Timer();
-    int r = (int)(Math.random() * 16);
+    int r = (int)(Math.random() * 15);
     TimerTask task = new TimerTask() {
         public void run()
         {

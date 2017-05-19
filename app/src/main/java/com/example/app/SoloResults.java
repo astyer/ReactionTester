@@ -21,6 +21,73 @@ public class SoloResults extends AppCompatActivity {
         String timeS = timeInSecs + "";
         time.setText(timeS.substring(0,5) + "s");
 
+        TextView response = (TextView) findViewById(R.id.soloResponse);
+
+        if(timeInSecs < 0.35)
+        {
+            response.setText("Godly!");
+        }
+        else if(timeInSecs < 0.4)
+        {
+            response.setText("Insane!");
+        }
+        else if(timeInSecs < 0.45)
+        {
+            response.setText("Outstanding!");
+        }
+        else if(timeInSecs < 0.5)
+        {
+            response.setText("Amazing!");
+        }
+        else if(timeInSecs < 0.55)
+        {
+            response.setText("Speedy!");
+        }
+        else if(timeInSecs < 0.6)
+        {
+            response.setText("Quick one!");
+        }
+        else if(timeInSecs < 0.65)
+        {
+            response.setText("Nice!");
+        }
+        else if(timeInSecs < 0.7)
+        {
+            response.setText("Decent");
+        }
+        else if(timeInSecs < 0.75)
+        {
+            response.setText("OK");
+        }
+        else if(timeInSecs < 0.8)
+        {
+            response.setText("Alright");
+        }
+        else if(timeInSecs < 0.85)
+        {
+            response.setText("Meh");
+        }
+        else if(timeInSecs < 0.9)
+        {
+            response.setText("Subpar");
+        }
+        else if(timeInSecs < 0.95)
+        {
+            response.setText("You good?");
+        }
+        else if(timeInSecs < 1)
+        {
+            response.setText("Are you colorblind or something?");
+        }
+        else if(timeInSecs < 1.5)
+        {
+            response.setText("Ok now you're not even trying");
+        }
+        else
+        {
+            response.setText("Did I catch you napping?");
+        }
+
         goToSoloMenu();
         goToMainMenu();
     }
