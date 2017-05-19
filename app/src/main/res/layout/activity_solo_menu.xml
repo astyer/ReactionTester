@@ -25,16 +25,16 @@
         app:layout_constraintVertical_bias="0.612" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="302dp"
-        android:layout_height="108dp"
+        android:id="@+id/tapWhenPink"
+        android:layout_width="306dp"
+        android:layout_height="165dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="81dp"
         android:text="Tap as soon as the screen turns pink!"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

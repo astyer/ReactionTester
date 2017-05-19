@@ -4,6 +4,7 @@ package com.example.app;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 
 public class SoloPlay extends AppCompatActivity {
@@ -12,7 +13,7 @@ public class SoloPlay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solo_play);
-
+        finish();
         change();
     }
 
@@ -22,7 +23,7 @@ public class SoloPlay extends AppCompatActivity {
         t.start();
         while(true)
         {
-            if(t.running())
+            if(t.stopped())
             {
                 Intent intent = new Intent(SoloPlay.this, SoloPlayReadyToTap.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);

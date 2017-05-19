@@ -23,6 +23,8 @@ public class VsMenu extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
+                Button toVsPlay = (Button) findViewById(R.id.VsStart);
+                toVsPlay.setText("Wait for it...");
                 Intent intent = new Intent(VsMenu.this, VsPlay.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);

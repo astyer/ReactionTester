@@ -13,11 +13,13 @@
         android:layout_width="414dp"
         android:layout_height="8dp"
         app:srcCompat="@android:color/background_dark"
-        tools:layout_editor_absoluteY="297dp"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/VsPink2"
         android:layout_width="462dp"
         android:layout_height="323dp"
         android:layout_marginTop="-28dp"
@@ -28,7 +30,7 @@
         app:srcCompat="@color/colorAccent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/vsPink1"
         android:layout_width="462dp"
         android:layout_height="323dp"
         android:layout_marginBottom="-262dp"

@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.ToggleButton;
 
 public class SoloMenu extends AppCompatActivity {
 
@@ -26,6 +24,8 @@ public class SoloMenu extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
+                Button toSoloPlay = (Button) findViewById(R.id.soloStart);
+                toSoloPlay.setText("Wait for it...");
                 Intent intent = new Intent(SoloMenu.this, SoloPlay.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);

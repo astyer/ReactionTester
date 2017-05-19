@@ -33,7 +33,10 @@
         <activity android:name=".SoloPlay" />
         <activity android:name=".VsPlay" />
         <activity android:name=".SoloPlayReadyToTap" />
-        <activity android:name=".VsPlayReadyToTap"></activity>
+        <activity android:name=".VsPlayReadyToTap" />
+        <activity android:name=".SoloResults" />
+        <activity android:name=".VsResults1" />
+        <activity android:name=".VsResults2"></activity>
     </application>
 
 </manifest>

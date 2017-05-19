@@ -24,7 +24,7 @@ public class Timerstuff {
         timer.scheduleAtFixedRate(task, 1000, 1000);
     }
 
-    public boolean running()
+    public boolean stopped()
     {
         if(secondsPassed == r)
         {

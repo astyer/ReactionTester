@@ -4,67 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.app.MainMenu">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="342dp"
-        android:layout_height="126dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="27dp"
-        android:text="Reaction Time Test"
-        android:textAlignment="center"
-        android:textColor="?attr/actionModeSplitBackground"
-        android:textSize="50sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context="com.example.app.VsResults1">
 
     <Button
-        android:id="@+id/toSolobutton"
+        android:id="@+id/vsMainMenu1"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
         android:layout_height="89dp"
         android:background="@color/colorPrimary"
         android:elevation="0dp"
         android:onClick="goToSoloMenu"
-        android:text="Solo"
+        android:text="Main Menu"
         android:textAllCaps="false"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <Button
-        android:id="@+id/toVsButton"
+        android:id="@+id/vsPlayAgain1"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
         android:layout_height="89dp"
         android:background="@color/colorPrimary"
         android:elevation="0dp"
-        android:text="Vs"
+        android:onClick="goToSoloMenu"
+        android:text="Play Again"
         android:textAllCaps="false"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
+        app:layout_constraintVertical_bias="0.898" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="287dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="223dp"
-        android:text="Choose your game mode"
+        android:id="@+id/vstimeText1"
+        android:layout_width="345dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="39dp"
+        android:text="time"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="35sp"
+        android:textColor="@color/colorAccent"
+        android:textSize="100sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="299dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="8sp"
+        android:text="Player 1 wins! Time:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
