@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.app.Global.soloTimes;
+
 public class SoloResults extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,7 @@ public class SoloResults extends AppCompatActivity {
         double eTime = getIntent().getDoubleExtra("endTime", 0);
         double elapsedTime = eTime - Global.soloStartTime;
         double timeInSecs = elapsedTime / Math.pow(10,9);
+        soloTimes.add(timeInSecs);
         TextView time = (TextView) findViewById(R.id.timeText);
         String timeS = timeInSecs + "";
         time.setText(timeS.substring(0,5) + "s");
@@ -73,7 +76,7 @@ public class SoloResults extends AppCompatActivity {
         }
         else if(timeInSecs < 0.95)
         {
-            response.setText("You good?");
+            response.setText("Are you okay?");
         }
         else if(timeInSecs < 1)
         {

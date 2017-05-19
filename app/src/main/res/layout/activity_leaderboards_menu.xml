@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.LeaderboardsMenu">
+
+    <Button
+        android:id="@+id/toVsL"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="325dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:onClick="goToSoloMenu"
+        android:text="Vs Leaderboard"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toSoloL"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <Button
+        android:id="@+id/toSoloL"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="325dp"
+        android:layout_height="123dp"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:onClick="goToSoloMenu"
+        android:text="Solo Leaderboard"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="342dp"
+        android:layout_height="126dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Leaderboards"
+        android:textAlignment="center"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.49" />
+</android.support.constraint.ConstraintLayout>

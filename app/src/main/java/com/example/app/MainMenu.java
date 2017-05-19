@@ -15,6 +15,7 @@ public class MainMenu extends AppCompatActivity {
 
         goToSoloMenu();
         goToVsMenu();
+        goToLeaderboardsMenu();
     }
 
     public void goToSoloMenu() {
@@ -30,13 +31,25 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void goToVsMenu() {
-        Button toVs = (Button) findViewById(R.id.toVsButton);
+        Button toVs = (Button) findViewById(R.id.toVsbutton);
         toVs.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
                 startActivity(new Intent(MainMenu.this, VsMenu.class));
+            }
+        });
+    }
+
+    public void goToLeaderboardsMenu() {
+        Button toL = (Button) findViewById(R.id.toLeaderboards);
+        toL.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainMenu.this, LeaderboardsMenu.class));
             }
         });
     }

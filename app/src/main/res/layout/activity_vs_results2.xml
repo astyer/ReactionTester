@@ -7,6 +7,20 @@
     tools:context="com.example.app.VsResults2">
 
     <TextView
+        android:id="@+id/vsResponse2"
+        android:layout_width="348dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="10dp"
+        android:text="response"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsTimeText2" />
+
+    <TextView
         android:id="@+id/vsTimeText2"
         android:layout_width="345dp"
         android:layout_height="153dp"
