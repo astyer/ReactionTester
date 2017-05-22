@@ -38,7 +38,8 @@
         <activity android:name=".VsResults1" />
         <activity android:name=".VsResults2" />
         <activity android:name=".LeaderboardsMenu" />
-        <activity android:name=".SoloLeaderboard"></activity>
+        <activity android:name=".SoloLeaderboard" />
+        <activity android:name=".VsLeaderboard"></activity>
     </application>
 
 </manifest>

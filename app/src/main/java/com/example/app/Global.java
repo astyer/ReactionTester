@@ -7,4 +7,5 @@ public class Global {
     public static double vsStartTime;
     public static ArrayList<Double> soloTimes = new ArrayList();
     public static ArrayList<Double> vsTimes = new ArrayList();
+    public static ArrayList<VsTime> vsObjs = new ArrayList();
 }

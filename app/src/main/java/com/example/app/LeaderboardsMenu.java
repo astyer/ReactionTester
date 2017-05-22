@@ -14,7 +14,7 @@ public class LeaderboardsMenu extends AppCompatActivity {
         setContentView(R.layout.activity_leaderboards_menu);
 
         goToSolo();
-        //goToVs();
+        goToVs();
     }
 
     public void goToSolo() {
@@ -29,7 +29,7 @@ public class LeaderboardsMenu extends AppCompatActivity {
         });
     }
 
-    /*public void goToVs() {
+    public void goToVs() {
         Button toVs = (Button) findViewById(R.id.toVsL);
         toVs.setOnClickListener(new View.OnClickListener()
         {
@@ -39,6 +39,6 @@ public class LeaderboardsMenu extends AppCompatActivity {
                 startActivity(new Intent(LeaderboardsMenu.this, VsLeaderboard.class));
             }
         });
-    }*/
+    }
 
 }

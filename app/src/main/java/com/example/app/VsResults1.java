@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.app.Global.vsObjs;
+import static com.example.app.Global.vsTimes;
+
 public class VsResults1 extends AppCompatActivity {
 
     @Override
@@ -17,6 +20,8 @@ public class VsResults1 extends AppCompatActivity {
         double eTime = getIntent().getDoubleExtra("endTime", 0);
         double elapsedTime = eTime - Global.vsStartTime;
         double timeInSecs = elapsedTime / Math.pow(10,9);
+        vsTimes.add(timeInSecs);
+        vsObjs.add(new VsTime(timeInSecs, "1"));
         TextView time = (TextView) findViewById(R.id.vstimeText1);
         String timeS = timeInSecs + "";
         time.setText(timeS.substring(0,5) + "s");
