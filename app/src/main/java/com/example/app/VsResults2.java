@@ -62,7 +62,7 @@ public class VsResults2 extends AppCompatActivity {
         }
         else if(timeInSecs < 0.75)
         {
-            response.setText("OK");
+            response.setText("Okay");
         }
         else if(timeInSecs < 0.8)
         {
@@ -95,6 +95,7 @@ public class VsResults2 extends AppCompatActivity {
 
         goToSoloMenu();
         goToMainMenu();
+        goToVsL();
     }
 
     public void goToSoloMenu() {
@@ -121,4 +122,15 @@ public class VsResults2 extends AppCompatActivity {
         });
     }
 
+    public void goToVsL() {
+        Button toVsL = (Button) findViewById(R.id.toVsL2);
+        toVsL.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(VsResults2.this, VsLeaderboard.class));
+            }
+        });
+    }
 }

@@ -37,9 +37,27 @@
         <activity android:name=".SoloResults" />
         <activity android:name=".VsResults1" />
         <activity android:name=".VsResults2" />
-        <activity android:name=".LeaderboardsMenu" />
-        <activity android:name=".SoloLeaderboard" />
-        <activity android:name=".VsLeaderboard"></activity>
+        <activity
+            android:name=".LeaderboardsMenu"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".SoloLeaderboard"
+            android:parentActivityName=".LeaderboardsMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LeaderboardsMenu" />
+        </activity>
+        <activity
+            android:name=".VsLeaderboard"
+            android:parentActivityName=".LeaderboardsMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LeaderboardsMenu" />
+        </activity>
     </application>
 
 </manifest>

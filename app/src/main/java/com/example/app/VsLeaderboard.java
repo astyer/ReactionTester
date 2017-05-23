@@ -17,7 +17,7 @@ public class VsLeaderboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vs_leaderboard);
 
-        TextView scrollText = (TextView) findViewById(R.id.scrollingText);
+        TextView scrollText = (TextView) findViewById(R.id.scrollingTextVs);
         scrollText.setMovementMethod(new ScrollingMovementMethod());
         Collections.sort(vsTimes);
         for(double d : vsTimes)
@@ -27,7 +27,7 @@ public class VsLeaderboard extends AppCompatActivity {
                 if(d == a.time)
                 {
                     String dS = d + "";
-                    scrollText.append(a.player + "\t"+ dS.substring(0,5) + "\n");
+                    scrollText.append("\t\t\t\t\t\t\t" + a.player + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" + dS.substring(0,5) + "\n");
                 }
             }
 

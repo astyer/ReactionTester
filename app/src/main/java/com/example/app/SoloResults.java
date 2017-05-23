@@ -60,7 +60,7 @@ public class SoloResults extends AppCompatActivity {
         }
         else if(timeInSecs < 0.75)
         {
-            response.setText("OK");
+            response.setText("Okay");
         }
         else if(timeInSecs < 0.8)
         {
@@ -93,6 +93,7 @@ public class SoloResults extends AppCompatActivity {
 
         goToSoloMenu();
         goToMainMenu();
+        goToSoloL();
     }
 
     public void goToSoloMenu() {
@@ -115,6 +116,18 @@ public class SoloResults extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(SoloResults.this, MainMenu.class));
+            }
+        });
+    }
+
+    public void goToSoloL() {
+        Button toSoloL = (Button) findViewById(R.id.toSoloL);
+        toSoloL.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(SoloResults.this, SoloLeaderboard.class));
             }
         });
     }

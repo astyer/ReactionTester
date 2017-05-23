@@ -8,7 +8,7 @@ public class Timerstuff {
     int secondsPassed = 0;
     Timer timer = new Timer();
     //int r = (int)(Math.random() * 8) + 2;
-    int r = 1;
+    int r = 0;
     TimerTask task = new TimerTask() {
         public void run()
         {

@@ -9,6 +9,24 @@
     tools:layout_editor_absoluteX="0dp">
 
     <Button
+        android:id="@+id/toSoloL"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="231dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:text="Solo Leaderboard"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toVsbutton"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
         android:id="@+id/playAgain"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
@@ -19,12 +37,10 @@
         android:text="Play Again"
         android:textAllCaps="false"
         android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/mainMenu" />
 
     <Button
         android:id="@+id/mainMenu"
@@ -38,11 +54,11 @@
         android:textAllCaps="false"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.785" />
 
     <TextView
         android:id="@+id/timeText"
@@ -74,14 +90,13 @@
 
     <TextView
         android:id="@+id/soloResponse"
-        android:layout_width="348dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="69dp"
+        android:layout_width="347dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="22dp"
         android:text="response"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="40sp"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timeText" />
