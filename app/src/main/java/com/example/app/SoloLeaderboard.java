@@ -1,5 +1,6 @@
 package com.example.app;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -15,6 +16,7 @@ public class SoloLeaderboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solo_leaderboard);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         TextView scrollText = (TextView) findViewById(R.id.scrollingText);
         scrollText.setMovementMethod(new ScrollingMovementMethod());

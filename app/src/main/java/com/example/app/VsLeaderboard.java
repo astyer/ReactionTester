@@ -1,5 +1,6 @@
 package com.example.app;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -16,6 +17,7 @@ public class VsLeaderboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vs_leaderboard);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         TextView scrollText = (TextView) findViewById(R.id.scrollingTextVs);
         scrollText.setMovementMethod(new ScrollingMovementMethod());
