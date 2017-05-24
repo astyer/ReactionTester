@@ -21,10 +21,20 @@ public class SoloLeaderboard extends AppCompatActivity {
         TextView scrollText = (TextView) findViewById(R.id.scrollingText);
         scrollText.setMovementMethod(new ScrollingMovementMethod());
         Collections.sort(soloTimes);
-        for(double d : soloTimes)
+        /*for(double d : soloTimes)
         {
             String dS = d + "";
             scrollText.append(dS.substring(0,5) + "\n");
+        }*/
+        for(int i = 0; i < 20; i++)
+        {
+            String dSA = "";
+            if(i < soloTimes.size())
+            {
+                String dS = soloTimes.get(i) + "";
+                dSA = dS.substring(0,5);
+            }
+            scrollText.append((i+1) + ".\t\t\t\t\t\t\t\t\t\t\t\t\t" + dSA + "\n");
         }
 
     }

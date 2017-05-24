@@ -12,15 +12,14 @@
         android:id="@+id/scrollingText"
         android:layout_width="359dp"
         android:layout_height="766dp"
-        android:layout_marginLeft="0dp"
         android:layout_marginTop="11dp"
         android:scrollIndicators="none"
         android:scrollbars="vertical"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         android:textColor="@color/colorAccent"
         android:textSize="45sp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -28,28 +27,29 @@
         android:id="@+id/textView11"
         android:layout_width="263dp"
         android:layout_height="59dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Times:"
-        android:textAlignment="viewStart"
+        android:text="Time"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="50sp"
-        android:layout_marginTop="11dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView9" />
+        app:layout_constraintHorizontal_bias="0.504" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="376dp"
         android:layout_height="118dp"
-        android:layout_marginTop="4dp"
         android:text="Solo Leaderboard"
         android:textAlignment="center"
         android:textColor="?attr/actionModeSplitBackground"
         android:textSize="50sp"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
 </android.support.constraint.ConstraintLayout>

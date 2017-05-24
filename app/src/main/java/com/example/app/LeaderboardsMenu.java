@@ -24,7 +24,7 @@ public class LeaderboardsMenu extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                startActivity(new Intent(LeaderboardsMenu.this, SoloLeaderboard.class));
+                startActivity(new Intent(LeaderboardsMenu.this, test.class));
             }
         });
     }
