@@ -58,7 +58,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LeaderboardsMenu" />
         </activity>
-        <activity android:name=".test"></activity>
     </application>
 
 </manifest>

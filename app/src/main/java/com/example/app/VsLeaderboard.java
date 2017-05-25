@@ -22,17 +22,36 @@ public class VsLeaderboard extends AppCompatActivity {
         TextView scrollText = (TextView) findViewById(R.id.scrollingTextVs);
         scrollText.setMovementMethod(new ScrollingMovementMethod());
         Collections.sort(vsTimes);
-        for(double d : vsTimes)
+        for(int i = 0; i < 20; i++)
         {
-            for(VsTime a: vsObjs)
+            for(int x = 0; x < vsObjs.size(); x++)
             {
-                if(d == a.time)
+                if(vsTimes.get(i) == vsObjs.get(x).time)
                 {
-                    String dS = d + "";
-                    scrollText.append("\t\t\t\t\t\t\t" + a.player + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" + dS.substring(0,5) + "\n");
+                    String dS = vsTimes.get(i) + "";
+                    scrollText.append("\t\t\t\t\t\t\t" + vsObjs.get(x).player + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" + dS.substring(0,5) + "\n");
                 }
             }
 
         }
+
+        /*for(int i = 0; i < 20; i++)
+        {
+            String dSA = "\t\t\t-------";
+            if(i < soloTimes.size())
+            {
+                String dS = soloTimes.get(i) + "";
+                dSA = dS.substring(0,5) + "s";
+            }
+            String num = (i+1) + "";
+            if(num.length() > 1)
+            {
+                scrollText.append(num + ".\t\t\t\t\t\t\t\t" + dSA + "\n");
+            }
+            else
+            {
+                scrollText.append(num + ".\t\t\t\t\t\t\t\t\t\t\t\t" + dSA + "\n");
+            }
+        }*/
     }
 }
