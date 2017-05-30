@@ -24,15 +24,18 @@ public class VsLeaderboard extends AppCompatActivity {
         Collections.sort(vsTimes);
         for(int i = 0; i < 20; i++)
         {
+            String num = (i+1) + "";
             for(int x = 0; x < vsObjs.size(); x++)
             {
-                if(vsTimes.get(i) == vsObjs.get(x).time)
+                String nextTimeS = vsTimes.get(i) + "";
+                String objTimeS = vsObjs.get(x).time + "";
+                if(nextTimeS.substring(0,5).equals(objTimeS.substring(0,5)))
                 {
-                    String dS = vsTimes.get(i) + "";
-                    scrollText.append("\t\t\t\t\t\t\t" + vsObjs.get(x).player + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" + dS.substring(0,5) + "\n");
+                    scrollText.append(num + "\n");
+                    //String dS = vsTimes.get(i) + "";
+                    //scrollText.append(num + "\t\t\t\t\t\t\t" + vsObjs.get(x).player + "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" + dS.substring(0,5) + "\n");
                 }
             }
-
         }
 
         /*for(int i = 0; i < 20; i++)
