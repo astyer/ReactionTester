@@ -17,11 +17,12 @@ public class MainMenu extends AppCompatActivity {
 
         goToSoloMenu();
         goToVsMenu();
+        goToArcadeMenu();
         goToLeaderboardsMenu();
     }
 
     public void goToSoloMenu() {
-        Button toSolo = (Button) findViewById(R.id.toSolobutton);
+        Button toSolo = (Button) findViewById(R.id.toSoloButton);
         toSolo.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -40,6 +41,18 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(MainMenu.this, VsMenu.class));
+            }
+        });
+    }
+
+    public void goToArcadeMenu() {
+        Button toArcade = (Button) findViewById(R.id.toArcade);
+        toArcade.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainMenu.this, ArcadeMenu.class));
             }
         });
     }

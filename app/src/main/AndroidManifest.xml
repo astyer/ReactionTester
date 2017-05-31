@@ -58,6 +58,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LeaderboardsMenu" />
         </activity>
+        <activity
+            android:name=".ArcadeMenu"
+            android:parentActivityName=".MainMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity android:name=".ArcadePlay" />
+        <activity android:name=".ArcadePlayReadyToTap1" />
+        <activity android:name=".ArcadePlayReadyToTap2" />
+        <activity android:name=".ArcadeResults"></activity>
     </application>
 
 </manifest>
