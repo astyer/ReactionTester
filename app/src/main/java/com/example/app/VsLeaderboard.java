@@ -58,24 +58,5 @@ public class VsLeaderboard extends AppCompatActivity {
             }
 
         }
-
-        /*for(int i = 0; i < 20; i++)
-        {
-            String dSA = "\t\t\t-------";
-            if(i < soloTimes.size())
-            {
-                String dS = soloTimes.get(i) + "";
-                dSA = dS.substring(0,5) + "s";
-            }
-            String num = (i+1) + "";
-            if(num.length() > 1)
-            {
-                scrollText.append(num + ".\t\t\t\t\t\t\t\t" + dSA + "\n");
-            }
-            else
-            {
-                scrollText.append(num + ".\t\t\t\t\t\t\t\t\t\t\t\t" + dSA + "\n");
-            }
-        }*/
     }
 }
