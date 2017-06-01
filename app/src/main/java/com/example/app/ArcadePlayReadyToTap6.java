@@ -10,12 +10,12 @@ import android.widget.ImageButton;
 import static com.example.app.Global.arcadeCounter;
 import static com.example.app.Global.notStarted;
 
-public class ArcadePlayReadyToTap1 extends AppCompatActivity {
+public class ArcadePlayReadyToTap6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arcade_play_ready_to_tap1);
+        setContentView(R.layout.activity_arcade_play_ready_to_tap6);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         if(notStarted)
         {
@@ -37,7 +37,7 @@ public class ArcadePlayReadyToTap1 extends AppCompatActivity {
                 {
                     arcadeCounter = 0;
                     double endTime = System.nanoTime();
-                    Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadeResults.class);
+                    Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadeResults.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     intent.putExtra("endTime", endTime);
                     startActivity(intent);
@@ -48,68 +48,69 @@ public class ArcadePlayReadyToTap1 extends AppCompatActivity {
                     int r = (int)(Math.random() * 9);
                     if(r == 0)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap2.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap1.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 1)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap3.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap2.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 2)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap4.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap3.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 3)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap5.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap4.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 4)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap6.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap5.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 5)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap7.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap7.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 6)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap8.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap8.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 7)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap9.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap9.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                     else if(r == 8)
                     {
-                        Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap10.class);
+                        Intent intent = new Intent(ArcadePlayReadyToTap6.this, ArcadePlayReadyToTap10.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                         overridePendingTransition(0,0);
                     }
                 }
+
             }
         });
     }

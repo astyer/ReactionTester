@@ -68,7 +68,15 @@
         <activity android:name=".ArcadePlay" />
         <activity android:name=".ArcadePlayReadyToTap1" />
         <activity android:name=".ArcadePlayReadyToTap2" />
-        <activity android:name=".ArcadeResults"></activity>
+        <activity android:name=".ArcadeResults" />
+        <activity android:name=".ArcadePlayReadyToTap3" />
+        <activity android:name=".ArcadePlayReadyToTap4" />
+        <activity android:name=".ArcadePlayReadyToTap5" />
+        <activity android:name=".ArcadePlayReadyToTap6" />
+        <activity android:name=".ArcadePlayReadyToTap7" />
+        <activity android:name=".ArcadePlayReadyToTap8" />
+        <activity android:name=".ArcadePlayReadyToTap9" />
+        <activity android:name=".ArcadePlayReadyToTap10"></activity>
     </application>
 
 </manifest>

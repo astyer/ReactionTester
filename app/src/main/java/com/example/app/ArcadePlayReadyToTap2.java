@@ -22,7 +22,6 @@ public class ArcadePlayReadyToTap2 extends AppCompatActivity {
             Global.arcadeStartTime = System.nanoTime();
             notStarted = false;
         }
-        arcadeCounter++;
         goToNext();
     }
 
@@ -33,8 +32,10 @@ public class ArcadePlayReadyToTap2 extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                if(arcadeCounter > 1)
+                arcadeCounter++;
+                if(arcadeCounter > 9)
                 {
+                    arcadeCounter = 0;
                     double endTime = System.nanoTime();
                     Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadeResults.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
@@ -42,21 +43,73 @@ public class ArcadePlayReadyToTap2 extends AppCompatActivity {
                     startActivity(intent);
                     overridePendingTransition(0,0);
                 }
-                int r = (int)(Math.random() * 1);
-                if(r == 0)
+                else
                 {
-                    Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap1.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                    startActivity(intent);
-                    overridePendingTransition(0,0);
+                    int r = (int)(Math.random() * 9);
+                    if(r == 0)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap1.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 1)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap3.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 2)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap4.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 3)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap5.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 4)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap6.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 5)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap7.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 6)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap8.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 7)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap9.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
+                    else if(r == 8)
+                    {
+                        Intent intent = new Intent(ArcadePlayReadyToTap2.this, ArcadePlayReadyToTap10.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                        overridePendingTransition(0,0);
+                    }
                 }
-                /*else if(r == 1)
-                {
-                    Intent intent = new Intent(ArcadePlayReadyToTap1.this, ArcadePlayReadyToTap3.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                    startActivity(intent);
-                    overridePendingTransition(0,0);
-                }*/
 
             }
         });

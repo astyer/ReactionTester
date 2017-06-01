@@ -7,7 +7,7 @@
     tools:context="com.example.app.ArcadeResults">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/arcadeLeaderboard"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="253dp"
         android:layout_height="58dp"
@@ -19,14 +19,14 @@
         android:textAllCaps="false"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toVsbutton"
-        app:layout_constraintVertical_bias="0.4"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/mainMenu"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
         android:layout_height="89dp"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.785" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/playAgain"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
         android:layout_height="89dp"
@@ -54,13 +54,13 @@
         android:text="Play Again"
         android:textAllCaps="false"
         android:textSize="26sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mainMenu"
         app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/arcadeResponse"
         android:layout_width="347dp"
         android:layout_height="121dp"
         android:layout_marginTop="22dp"
@@ -70,10 +70,10 @@
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/timeText"
         android:layout_width="347dp"
         android:layout_height="118dp"
         android:layout_marginTop="39dp"
