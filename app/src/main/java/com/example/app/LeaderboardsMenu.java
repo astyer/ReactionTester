@@ -15,6 +15,7 @@ public class LeaderboardsMenu extends AppCompatActivity {
 
         goToSolo();
         goToVs();
+        goToArcade();
     }
 
     public void goToSolo() {
@@ -37,6 +38,18 @@ public class LeaderboardsMenu extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(LeaderboardsMenu.this, VsLeaderboard.class));
+            }
+        });
+    }
+
+    public void goToArcade() {
+        Button toArc = (Button) findViewById(R.id.toArcL);
+        toArc.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(LeaderboardsMenu.this, ArcadeLeaderboard.class));
             }
         });
     }

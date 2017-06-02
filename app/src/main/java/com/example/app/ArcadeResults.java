@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import static com.example.app.Global.arcadeTimes;
+import static com.example.app.Global.notStarted;
 
 public class ArcadeResults extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class ArcadeResults extends AppCompatActivity {
         setContentView(R.layout.activity_arcade_results);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        notStarted = true;
         double eTime = getIntent().getDoubleExtra("endTime", 0);
         double elapsedTime = eTime - Global.arcadeStartTime;
         double timeInSecs = elapsedTime / Math.pow(10,9);
@@ -28,63 +30,63 @@ public class ArcadeResults extends AppCompatActivity {
 
         TextView response = (TextView) findViewById(R.id.arcadeResponse);
 
-        if(timeInSecs < 0.35)
+        if(timeInSecs < 5)
         {
             response.setText("Godly!");
         }
-        else if(timeInSecs < 0.4)
+        else if(timeInSecs < 5.25)
         {
             response.setText("Insane!");
         }
-        else if(timeInSecs < 0.45)
+        else if(timeInSecs < 5.5)
         {
             response.setText("Outstanding!");
         }
-        else if(timeInSecs < 0.5)
+        else if(timeInSecs < 5.75)
         {
             response.setText("Amazing!");
         }
-        else if(timeInSecs < 0.55)
+        else if(timeInSecs < 6)
         {
             response.setText("Speedy!");
         }
-        else if(timeInSecs < 0.6)
+        else if(timeInSecs < 6.25)
         {
             response.setText("Quick one!");
         }
-        else if(timeInSecs < 0.65)
+        else if(timeInSecs < 6.5)
         {
             response.setText("Nice!");
         }
-        else if(timeInSecs < 0.7)
+        else if(timeInSecs < 6.75)
         {
             response.setText("Decent");
         }
-        else if(timeInSecs < 0.75)
+        else if(timeInSecs < 7)
         {
             response.setText("Okay");
         }
-        else if(timeInSecs < 0.8)
+        else if(timeInSecs < 7.25)
         {
             response.setText("Alright");
         }
-        else if(timeInSecs < 0.85)
+        else if(timeInSecs < 7.5)
         {
             response.setText("Meh");
         }
-        else if(timeInSecs < 0.9)
+        else if(timeInSecs < 7.75)
         {
             response.setText("Subpar");
         }
-        else if(timeInSecs < 0.95)
+        else if(timeInSecs < 8)
         {
             response.setText("Are you okay?");
         }
-        else if(timeInSecs < 1)
+        else if(timeInSecs < 8.25)
         {
             response.setText("Are you colorblind or something?");
         }
-        else if(timeInSecs < 1.5)
+        else if(timeInSecs < 8.5)
         {
             response.setText("Ok now you're not even trying");
         }
@@ -95,7 +97,7 @@ public class ArcadeResults extends AppCompatActivity {
 
         goToArcadeMenu();
         goToMainMenu();
-        //goToArcadeLeaderboard();
+        goToArcadeLeaderboard();
     }
 
     public void goToArcadeMenu() {
@@ -122,7 +124,7 @@ public class ArcadeResults extends AppCompatActivity {
         });
     }
 
-    /*public void goToArcadeLeaderboard() {
+    public void goToArcadeLeaderboard() {
         Button toSolo = (Button) findViewById(R.id.arcadeLeaderboard);
         toSolo.setOnClickListener(new View.OnClickListener()
         {
@@ -132,5 +134,5 @@ public class ArcadeResults extends AppCompatActivity {
                 startActivity(new Intent(ArcadeResults.this, ArcadeLeaderboard.class));
             }
         });
-    }*/
+    }
 }

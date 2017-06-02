@@ -76,7 +76,14 @@
         <activity android:name=".ArcadePlayReadyToTap7" />
         <activity android:name=".ArcadePlayReadyToTap8" />
         <activity android:name=".ArcadePlayReadyToTap9" />
-        <activity android:name=".ArcadePlayReadyToTap10"></activity>
+        <activity android:name=".ArcadePlayReadyToTap10" />
+        <activity
+            android:name=".ArcadeLeaderboard"
+            android:parentActivityName=".LeaderboardsMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
     </application>
 
 </manifest>
