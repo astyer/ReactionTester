@@ -26,7 +26,8 @@ public class ArcadeResults extends AppCompatActivity {
         arcadeTimes.add(timeInSecs);
         TextView time = (TextView) findViewById(R.id.timeText);
         String timeS = timeInSecs + "";
-        time.setText(timeS.substring(0,5) + "s");
+        String timeSA = timeS.substring(0,5) + "s";
+        time.setText(timeSA);
 
         TextView response = (TextView) findViewById(R.id.arcadeResponse);
 
