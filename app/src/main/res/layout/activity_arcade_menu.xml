@@ -31,7 +31,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="81dp"
-        android:text="Tap the pink boxes as soon as they appear!"
+        android:text="Tap the colored boxes as soon as they appear!"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="40sp"

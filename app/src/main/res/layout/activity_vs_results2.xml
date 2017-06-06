@@ -26,14 +26,14 @@
 
     <TextView
         android:id="@+id/vsResponse2"
-        android:layout_width="348dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="22dp"
+        android:layout_width="353dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="0dp"
         android:text="response"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="40sp"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vsTimeText2" />
@@ -42,7 +42,7 @@
         android:id="@+id/vsTimeText2"
         android:layout_width="347dp"
         android:layout_height="119dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="0dp"
         android:text="time"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
@@ -99,4 +99,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@+id/vsMainMenu2" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="0dp"
+        android:text="+$"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsResponse2" />
 </android.support.constraint.ConstraintLayout>

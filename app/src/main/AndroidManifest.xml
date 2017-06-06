@@ -84,6 +84,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainMenu" />
         </activity>
+        <activity android:name=".Shop"></activity>
     </application>
 
 </manifest>

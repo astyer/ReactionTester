@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import static com.example.app.Global.moneyTotal;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -15,10 +18,14 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_mainmenu);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        TextView moneyText = (TextView) findViewById(R.id.Money);
+        moneyText.setText(moneyTotal + "$");
+
         goToSoloMenu();
         goToVsMenu();
         goToArcadeMenu();
         goToLeaderboardsMenu();
+        goToShop();
     }
 
     public void goToSoloMenu() {
@@ -65,6 +72,18 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(MainMenu.this, LeaderboardsMenu.class));
+            }
+        });
+    }
+
+    public void goToShop() {
+        Button toS = (Button) findViewById(R.id.toShop);
+        toS.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainMenu.this, Shop.class));
             }
         });
     }

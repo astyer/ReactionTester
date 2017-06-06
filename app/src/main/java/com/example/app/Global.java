@@ -8,6 +8,7 @@ public class Global {
     public static double arcadeStartTime;
     public static boolean notStarted = true;
     public static int arcadeCounter;
+    public static int moneyTotal;
     public static ArrayList<Double> soloTimes = new ArrayList();
     public static ArrayList<Double> vsTimes = new ArrayList();
     public static ArrayList<Double> arcadeTimes = new ArrayList();
