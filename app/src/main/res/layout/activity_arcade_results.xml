@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.app.ArcadeResults">
 
+    <TextView
+        android:id="@+id/moneyAdded"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:text="+$"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arcadeResponse" />
+
     <Button
         android:id="@+id/arcadeLeaderboard"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -61,8 +74,8 @@
 
     <TextView
         android:id="@+id/arcadeResponse"
-        android:layout_width="347dp"
-        android:layout_height="121dp"
+        android:layout_width="351dp"
+        android:layout_height="110dp"
         android:layout_marginTop="22dp"
         android:text="response"
         android:textAlignment="center"
@@ -76,7 +89,7 @@
         android:id="@+id/timeText"
         android:layout_width="347dp"
         android:layout_height="118dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="18dp"
         android:text="time"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
@@ -89,7 +102,7 @@
         android:id="@+id/textView16"
         android:layout_width="122dp"
         android:layout_height="46dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="16dp"
         android:text="Time:"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
