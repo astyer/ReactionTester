@@ -13,6 +13,7 @@ public class Global {
     public static ArrayList<Double> vsTimes = new ArrayList();
     public static ArrayList<Double> arcadeTimes = new ArrayList();
     public static ArrayList<VsTime> vsObjs = new ArrayList();
-    public static boolean blueNot = true;
-    public String selectedColor = "pink";
+    public static boolean lblueNot = true;
+    public static String selectedColor = "pink";
+    public static ArrayList purchasedButtons = new ArrayList();
 }
