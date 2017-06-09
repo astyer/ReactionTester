@@ -6,13 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import static com.example.app.Global.lblueNot;
 import static com.example.app.Global.moneyTotal;
-import static com.example.app.Global.purchasedButtons;
 import static com.example.app.Global.selectedColor;
 
 public class Shop extends AppCompatActivity {
@@ -40,10 +40,9 @@ public class Shop extends AppCompatActivity {
         purple.setBackgroundColor(Color.parseColor("#A02CCF"));
         Button lblue = (Button) findViewById(R.id.lightBlue);
         Button lgreen = (Button) findViewById(R.id.lightGreen);
-        Button black = (Button) findViewById(R.id.Black);
-        Button silver = (Button) findViewById(R.id.Silver);
-        Button gold = (Button) findViewById(R.id.Gold);
-        gold.setBackgroundColor(Color.parseColor("#F2D71A"));
+        ImageButton rainbow = (ImageButton) findViewById(R.id.Rainbow);
+        ImageButton lightning = (ImageButton) findViewById(R.id.Lightning);
+        ImageButton choing = (ImageButton) findViewById(R.id.Choing);
 
 
         if(lblueNot)
@@ -58,16 +57,29 @@ public class Shop extends AppCompatActivity {
                     //{
                         Button lblue = (Button) findViewById(R.id.lightBlue);
                         lblue.setText("Selected");
-                        selectedColor = "lblue";
-                        purchasedButtons.add(lblue);
-                    for(Object a: purchasedButtons)
+
+                    if(selectedColor.equals("red"))
                     {
-                        Button ab = (Button) a;
-                        if(!(ab.equals("lblue")))
-                        {
-                            ab.setText("");
-                        }
+                        Button red = (Button) findViewById(R.id.Red);
+                        red.setText("");
                     }
+                    if(selectedColor.equals("orange"))
+                    {
+                        Button orange = (Button) findViewById(R.id.Orange);
+                        orange.setText("");
+                    }
+                    if(selectedColor.equals("red"))
+                    {
+                        Button red = (Button) findViewById(R.id.Red);
+                        red.setText("");
+                    }
+                    if(selectedColor.equals("red"))
+                    {
+                        Button red = (Button) findViewById(R.id.Red);
+                        red.setText("");
+                    }
+
+
                     //}
                 }
             });
