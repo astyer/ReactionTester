@@ -2,11 +2,16 @@ package com.example.app;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import static com.example.app.Global.selectedColor;
+import static com.example.app.R.drawable.rainbowback;
+import static com.example.app.R.drawable.bluelightning;
 
 public class SoloPlayReadyToTap extends AppCompatActivity {
 
@@ -21,6 +26,14 @@ public class SoloPlayReadyToTap extends AppCompatActivity {
 
     public void goToSoloResults() {
         ImageButton toResults = (ImageButton) findViewById(R.id.SoloPink);
+        if(selectedColor.equals("rainbow"))
+        {
+            toResults.setImageResource(rainbowback);
+        }
+        if(selectedColor.equals("lightning"))
+        {
+            toResults.setImageResource(bluelightning);
+        }
         toResults.setOnClickListener(new View.OnClickListener()
         {
             @Override
