@@ -26,4 +26,6 @@ public class Global {
     public static boolean choingNot = true;
     public static String selectedColor = "pink";
     public static ArrayList<String> colors = new ArrayList();
+
+    public static boolean debugging = false;
 }

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import static com.example.app.Global.blueNot;
 import static com.example.app.Global.choingNot;
+import static com.example.app.Global.debugging;
 import static com.example.app.Global.greenNot;
 import static com.example.app.Global.lblueNot;
 import static com.example.app.Global.lgreenNot;
@@ -198,7 +199,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                         moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -415,7 +416,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                     moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -632,7 +633,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                     moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -849,7 +850,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                     moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -1066,7 +1067,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                     moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -1283,7 +1284,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                     moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -1500,7 +1501,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                         moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -1717,7 +1718,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 10000)
+                    if(moneyTotal >= 10000 || debugging)
                     {
                     moneyTotal-=10000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -1934,7 +1935,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 50000)
+                    if(moneyTotal >= 50000 || debugging)
                     {
                     moneyTotal-=50000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -2151,7 +2152,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 75000)
+                    if(moneyTotal >= 75000 || debugging)
                     {
                     moneyTotal-=75000;
                         TextView money = (TextView) findViewById(R.id.moneyText);
@@ -2368,7 +2369,7 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    if(moneyTotal >= 99999)
+                    if(moneyTotal >= 99999 || debugging)
                     {
                     moneyTotal-=99999;
                         TextView money = (TextView) findViewById(R.id.moneyText);
