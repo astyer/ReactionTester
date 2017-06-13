@@ -101,7 +101,7 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/vsMainMenu2" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/moneyAdded"
         android:layout_width="187dp"
         android:layout_height="51dp"
         android:layout_marginTop="0dp"

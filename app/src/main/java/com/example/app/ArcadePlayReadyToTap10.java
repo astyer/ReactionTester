@@ -9,6 +9,18 @@ import android.widget.ImageButton;
 
 import static com.example.app.Global.arcadeCounter;
 import static com.example.app.Global.notStarted;
+import static com.example.app.Global.selectedColor;
+import static com.example.app.R.drawable.blue;
+import static com.example.app.R.drawable.bluelightningsmall;
+import static com.example.app.R.drawable.choingfacesmall;
+import static com.example.app.R.drawable.green;
+import static com.example.app.R.drawable.lblue;
+import static com.example.app.R.drawable.lgreen;
+import static com.example.app.R.drawable.orange;
+import static com.example.app.R.drawable.purple;
+import static com.example.app.R.drawable.rainbowbackarcade;
+import static com.example.app.R.drawable.red;
+import static com.example.app.R.drawable.yellow;
 
 public class ArcadePlayReadyToTap10 extends AppCompatActivity {
 
@@ -27,6 +39,50 @@ public class ArcadePlayReadyToTap10 extends AppCompatActivity {
 
     public void goToNext() {
         ImageButton toNext = (ImageButton) findViewById(R.id.arcadePink);
+        if(selectedColor.equals("red"))
+        {
+            toNext.setImageResource(red);
+        }
+        if(selectedColor.equals("orange"))
+        {
+            toNext.setImageResource(orange);
+        }
+        if(selectedColor.equals("yellow"))
+        {
+            toNext.setImageResource(yellow);
+        }
+        if(selectedColor.equals("green"))
+        {
+            toNext.setImageResource(green);
+        }
+        if(selectedColor.equals("blue"))
+        {
+            toNext.setImageResource(blue);
+        }
+        if(selectedColor.equals("purple"))
+        {
+            toNext.setImageResource(purple);
+        }
+        if(selectedColor.equals("lblue"))
+        {
+            toNext.setImageResource(lblue);
+        }
+        if(selectedColor.equals("lgreen"))
+        {
+            toNext.setImageResource(lgreen);
+        }
+        if(selectedColor.equals("rainbow"))
+        {
+            toNext.setImageResource(rainbowbackarcade);
+        }
+        if(selectedColor.equals("lightning"))
+        {
+            toNext.setImageResource(bluelightningsmall);
+        }
+        if(selectedColor.equals("choing"))
+        {
+            toNext.setImageResource(choingfacesmall);
+        }
         toNext.setOnClickListener(new View.OnClickListener()
         {
             @Override

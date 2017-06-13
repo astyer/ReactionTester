@@ -6,14 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 import static com.example.app.Global.blueNot;
 import static com.example.app.Global.choingNot;
-import static com.example.app.Global.colors;
 import static com.example.app.Global.greenNot;
 import static com.example.app.Global.lblueNot;
 import static com.example.app.Global.lgreenNot;
@@ -202,8 +198,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                        moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                         redNot = false;
                         Button red = (Button) findViewById(R.id.Red);
                         red.setText("Selected");
@@ -263,7 +262,7 @@ public class Shop extends AppCompatActivity {
                             c.setText("");
                         }
                         selectedColor = "red";
-                    //}
+                    }
                 }
             });
         }
@@ -279,6 +278,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button red = (Button) findViewById(R.id.Red);
                         red.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.lightBlue);
@@ -343,6 +347,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button red = (Button) findViewById(R.id.Red);
                         red.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.lightBlue);
@@ -406,8 +415,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                    moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     orangeNot = false;
                     Button orange = (Button) findViewById(R.id.Orange);
                     orange.setText("Selected");
@@ -467,7 +479,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "orange";
-                    //}
+                    }
                 }
             });
         }
@@ -483,6 +495,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button orange = (Button) findViewById(R.id.Orange);
                         orange.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -547,6 +564,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button orange = (Button) findViewById(R.id.Orange);
                         orange.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -610,8 +632,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                    moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     yellowNot = false;
                     Button yellow = (Button) findViewById(R.id.Yellow);
                     yellow.setText("Selected");
@@ -671,7 +696,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "yellow";
-                    //}
+                    }
                 }
             });
         }
@@ -687,6 +712,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button yellow = (Button) findViewById(R.id.Yellow);
                         yellow.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -751,6 +781,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button yellow = (Button) findViewById(R.id.Yellow);
                         yellow.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -814,8 +849,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                    moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     greenNot = false;
                     Button green = (Button) findViewById(R.id.Green);
                     green.setText("Selected");
@@ -875,7 +913,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "green";
-                    //}
+                    }
                 }
             });
         }
@@ -891,6 +929,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button green = (Button) findViewById(R.id.Green);
                         green.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -955,6 +998,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button green = (Button) findViewById(R.id.Green);
                         green.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1018,8 +1066,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                    moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     blueNot = false;
                     Button blue = (Button) findViewById(R.id.Blue);
                     blue.setText("Selected");
@@ -1079,7 +1130,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "blue";
-                    //}
+                    }
                 }
             });
         }
@@ -1095,6 +1146,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button blue = (Button) findViewById(R.id.Blue);
                         blue.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1159,6 +1215,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button blue = (Button) findViewById(R.id.Blue);
                         blue.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1222,8 +1283,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                    moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     purpleNot = false;
                     Button purple = (Button) findViewById(R.id.Purple);
                     purple.setText("Selected");
@@ -1283,7 +1347,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "purple";
-                    //}
+                    }
                 }
             });
         }
@@ -1299,6 +1363,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button purple = (Button) findViewById(R.id.Purple);
                         purple.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1363,6 +1432,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button purple = (Button) findViewById(R.id.Purple);
                         purple.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1426,8 +1500,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                        moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                         lblueNot = false;
                         Button lblue = (Button) findViewById(R.id.lightBlue);
                         lblue.setText("Selected");
@@ -1487,7 +1564,7 @@ public class Shop extends AppCompatActivity {
                             c.setText("");
                         }
                         selectedColor = "lblue";
-                    //}
+                    }
                 }
             });
         }
@@ -1503,6 +1580,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button lblue = (Button) findViewById(R.id.lightBlue);
                         lblue.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1567,6 +1649,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button lblue = (Button) findViewById(R.id.lightBlue);
                         lblue.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1630,8 +1717,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 10000)
-                    //{
+                    if(moneyTotal >= 10000)
+                    {
+                    moneyTotal-=10000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     lgreenNot = false;
                     Button lgreen = (Button) findViewById(R.id.lightGreen);
                     lgreen.setText("Selected");
@@ -1691,7 +1781,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "lgreen";
-                    //}
+                    }
                 }
             });
         }
@@ -1707,6 +1797,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button lgreen = (Button) findViewById(R.id.lightGreen);
                         lgreen.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1771,6 +1866,11 @@ public class Shop extends AppCompatActivity {
                     {
                         Button lgreen = (Button) findViewById(R.id.lightGreen);
                         lgreen.setText("Selected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -1827,210 +1927,6 @@ public class Shop extends AppCompatActivity {
             }
         }
 
-        if(rainbowNot)
-        {
-            rainbow.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View view)
-                {
-                    //if(moneyTotal >= 50000)
-                    //{
-                    rainbowNot = false;
-                    TextView rainbow = (TextView) findViewById(R.id.rainbowText);
-                    rainbow.setText("\nSelected");
-                    if(selectedColor.equals("pink"))
-                    {
-                        Button c = (Button) findViewById(R.id.Pink);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("red"))
-                    {
-                        Button c = (Button) findViewById(R.id.Red);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("orange"))
-                    {
-                        Button c = (Button) findViewById(R.id.Orange);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("yellow"))
-                    {
-                        Button c = (Button) findViewById(R.id.Yellow);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("green"))
-                    {
-                        Button c = (Button) findViewById(R.id.Green);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("blue"))
-                    {
-                        Button c = (Button) findViewById(R.id.Blue);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("purple"))
-                    {
-                        Button c = (Button) findViewById(R.id.Purple);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("lgreen"))
-                    {
-                        Button c = (Button) findViewById(R.id.lightGreen);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("lblue"))
-                    {
-                        Button c = (Button) findViewById(R.id.lightBlue);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("lightning"))
-                    {
-                        TextView c = (TextView) findViewById(R.id.lightningText);
-                        c.setText("");
-                    }
-                    if(selectedColor.equals("choing"))
-                    {
-                        TextView c = (TextView) findViewById(R.id.ChoingText);
-                        c.setText("");
-                    }
-                    selectedColor = "rainbow";
-                    //}
-                }
-            });
-        }
-        else
-        {
-            if(selectedColor.equals("rainbow"))
-            {
-                rainbow.setText("\nSelected");
-                rainbow.setOnClickListener(new View.OnClickListener()
-                {
-                    @Override
-                    public void onClick(View view)
-                    {
-                        TextView rainbow = (TextView) findViewById(R.id.rainbowText);
-                        rainbow.setText("\nSelected");
-                        if(selectedColor.equals("red"))
-                        {
-                            Button c = (Button) findViewById(R.id.Red);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("orange"))
-                        {
-                            Button c = (Button) findViewById(R.id.Orange);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("yellow"))
-                        {
-                            Button c = (Button) findViewById(R.id.Yellow);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("green"))
-                        {
-                            Button c = (Button) findViewById(R.id.Green);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("blue"))
-                        {
-                            Button c = (Button) findViewById(R.id.Blue);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("purple"))
-                        {
-                            Button c = (Button) findViewById(R.id.Purple);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("lgreen"))
-                        {
-                            Button c = (Button) findViewById(R.id.lightGreen);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("lblue"))
-                        {
-                            Button c = (Button) findViewById(R.id.lightBlue);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("lightning"))
-                        {
-                            TextView c = (TextView) findViewById(R.id.lightningText);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("choing"))
-                        {
-                            TextView c = (TextView) findViewById(R.id.ChoingText);
-                            c.setText("");
-                        }
-                        selectedColor = "rainbow";
-                    }
-                });
-            }
-            else
-            {
-                rainbow.setText("");
-                rainbow.setOnClickListener(new View.OnClickListener()
-                {
-                    @Override
-                    public void onClick(View view)
-                    {
-                        TextView rainbow = (TextView) findViewById(R.id.rainbowText);
-                        rainbow.setText("\nSelected");
-                        if(selectedColor.equals("red"))
-                        {
-                            Button c = (Button) findViewById(R.id.Red);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("orange"))
-                        {
-                            Button c = (Button) findViewById(R.id.Orange);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("yellow"))
-                        {
-                            Button c = (Button) findViewById(R.id.Yellow);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("green"))
-                        {
-                            Button c = (Button) findViewById(R.id.Green);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("blue"))
-                        {
-                            Button c = (Button) findViewById(R.id.Blue);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("purple"))
-                        {
-                            Button c = (Button) findViewById(R.id.Purple);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("lgreen"))
-                        {
-                            Button c = (Button) findViewById(R.id.lightGreen);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("lblue"))
-                        {
-                            Button c = (Button) findViewById(R.id.lightBlue);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("lightning"))
-                        {
-                            TextView c = (TextView) findViewById(R.id.lightningText);
-                            c.setText("");
-                        }
-                        if(selectedColor.equals("choing"))
-                        {
-                            TextView c = (TextView) findViewById(R.id.ChoingText);
-                            c.setText("");
-                        }
-                        selectedColor = "rainbow";
-                    }
-                });
-            }
-        }
-
         if(lightningNot)
         {
             lightning.setOnClickListener(new View.OnClickListener()
@@ -2038,8 +1934,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 50000)
-                    //{
+                    if(moneyTotal >= 50000)
+                    {
+                    moneyTotal-=50000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     lightningNot = false;
                     TextView lightning = (TextView) findViewById(R.id.lightningText);
                     lightning.setText("\nSelected");
@@ -2099,7 +1998,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "lightning";
-                    //}
+                    }
                 }
             });
         }
@@ -2115,6 +2014,11 @@ public class Shop extends AppCompatActivity {
                     {
                         TextView lightning = (TextView) findViewById(R.id.lightningText);
                         lightning.setText("\nSelected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -2179,6 +2083,11 @@ public class Shop extends AppCompatActivity {
                     {
                         TextView lightning = (TextView) findViewById(R.id.lightningText);
                         lightning.setText("\nSelected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -2235,6 +2144,223 @@ public class Shop extends AppCompatActivity {
             }
         }
 
+        if(rainbowNot)
+        {
+            rainbow.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    if(moneyTotal >= 75000)
+                    {
+                    moneyTotal-=75000;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
+                    rainbowNot = false;
+                    TextView rainbow = (TextView) findViewById(R.id.rainbowText);
+                    rainbow.setText("\nSelected");
+                    if(selectedColor.equals("pink"))
+                    {
+                        Button c = (Button) findViewById(R.id.Pink);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("red"))
+                    {
+                        Button c = (Button) findViewById(R.id.Red);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("orange"))
+                    {
+                        Button c = (Button) findViewById(R.id.Orange);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("yellow"))
+                    {
+                        Button c = (Button) findViewById(R.id.Yellow);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("green"))
+                    {
+                        Button c = (Button) findViewById(R.id.Green);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("blue"))
+                    {
+                        Button c = (Button) findViewById(R.id.Blue);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("purple"))
+                    {
+                        Button c = (Button) findViewById(R.id.Purple);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("lgreen"))
+                    {
+                        Button c = (Button) findViewById(R.id.lightGreen);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("lblue"))
+                    {
+                        Button c = (Button) findViewById(R.id.lightBlue);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("lightning"))
+                    {
+                        TextView c = (TextView) findViewById(R.id.lightningText);
+                        c.setText("");
+                    }
+                    if(selectedColor.equals("choing"))
+                    {
+                        TextView c = (TextView) findViewById(R.id.ChoingText);
+                        c.setText("");
+                    }
+                    selectedColor = "rainbow";
+                    }
+                }
+            });
+        }
+        else
+        {
+            if(selectedColor.equals("rainbow"))
+            {
+                rainbow.setText("\nSelected");
+                rainbow.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        TextView rainbow = (TextView) findViewById(R.id.rainbowText);
+                        rainbow.setText("\nSelected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("red"))
+                        {
+                            Button c = (Button) findViewById(R.id.Red);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("orange"))
+                        {
+                            Button c = (Button) findViewById(R.id.Orange);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("yellow"))
+                        {
+                            Button c = (Button) findViewById(R.id.Yellow);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("green"))
+                        {
+                            Button c = (Button) findViewById(R.id.Green);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("blue"))
+                        {
+                            Button c = (Button) findViewById(R.id.Blue);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("purple"))
+                        {
+                            Button c = (Button) findViewById(R.id.Purple);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("lgreen"))
+                        {
+                            Button c = (Button) findViewById(R.id.lightGreen);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("lblue"))
+                        {
+                            Button c = (Button) findViewById(R.id.lightBlue);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("lightning"))
+                        {
+                            TextView c = (TextView) findViewById(R.id.lightningText);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("choing"))
+                        {
+                            TextView c = (TextView) findViewById(R.id.ChoingText);
+                            c.setText("");
+                        }
+                        selectedColor = "rainbow";
+                    }
+                });
+            }
+            else
+            {
+                rainbow.setText("");
+                rainbow.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view)
+                    {
+                        TextView rainbow = (TextView) findViewById(R.id.rainbowText);
+                        rainbow.setText("\nSelected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("red"))
+                        {
+                            Button c = (Button) findViewById(R.id.Red);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("orange"))
+                        {
+                            Button c = (Button) findViewById(R.id.Orange);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("yellow"))
+                        {
+                            Button c = (Button) findViewById(R.id.Yellow);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("green"))
+                        {
+                            Button c = (Button) findViewById(R.id.Green);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("blue"))
+                        {
+                            Button c = (Button) findViewById(R.id.Blue);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("purple"))
+                        {
+                            Button c = (Button) findViewById(R.id.Purple);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("lgreen"))
+                        {
+                            Button c = (Button) findViewById(R.id.lightGreen);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("lblue"))
+                        {
+                            Button c = (Button) findViewById(R.id.lightBlue);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("lightning"))
+                        {
+                            TextView c = (TextView) findViewById(R.id.lightningText);
+                            c.setText("");
+                        }
+                        if(selectedColor.equals("choing"))
+                        {
+                            TextView c = (TextView) findViewById(R.id.ChoingText);
+                            c.setText("");
+                        }
+                        selectedColor = "rainbow";
+                    }
+                });
+            }
+        }
+
         if(choingNot)
         {
             choing.setOnClickListener(new View.OnClickListener()
@@ -2242,8 +2368,11 @@ public class Shop extends AppCompatActivity {
                 @Override
                 public void onClick(View view)
                 {
-                    //if(moneyTotal >= 99999)
-                    //{
+                    if(moneyTotal >= 99999)
+                    {
+                    moneyTotal-=99999;
+                        TextView money = (TextView) findViewById(R.id.moneyText);
+                        money.setText(moneyTotal + "$");
                     choingNot = false;
                     TextView choing = (TextView) findViewById(R.id.ChoingText);
                     choing.setText("\nSelected");
@@ -2303,7 +2432,7 @@ public class Shop extends AppCompatActivity {
                         c.setText("");
                     }
                     selectedColor = "choing";
-                    //}
+                    }
                 }
             });
         }
@@ -2319,6 +2448,11 @@ public class Shop extends AppCompatActivity {
                     {
                         TextView choing = (TextView) findViewById(R.id.ChoingText);
                         choing.setText("\nSelected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -2383,6 +2517,11 @@ public class Shop extends AppCompatActivity {
                     {
                         TextView choing = (TextView) findViewById(R.id.ChoingText);
                         choing.setText("\nSelected");
+                        if(selectedColor.equals("pink"))
+                        {
+                            Button c = (Button) findViewById(R.id.Pink);
+                            c.setText("");
+                        }
                         if(selectedColor.equals("red"))
                         {
                             Button c = (Button) findViewById(R.id.Red);
@@ -2438,8 +2577,5 @@ public class Shop extends AppCompatActivity {
                 });
             }
         }
-
-        TextView t = (TextView) findViewById(R.id.textView20);
-        t.setText(selectedColor);
     }
 }
